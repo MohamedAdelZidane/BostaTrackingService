@@ -1,0 +1,363 @@
+
+
+
+
+
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body{
+    top: 0 !important;
+    font-family: Cairo, Helvetica, Arial, Lucida, sans-serif;
+
+}
+
+#navBar-CSS{
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fff;
+   
+    padding: 0% 5%;
+}
+
+#navbarText{
+    padding: 1% 0;
+}
+
+.navContent .nav-item .nav-link{
+    color: #101010;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    color: #929292;
+    height: 4rem;
+
+}
+.steps > .step {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6d6875;
+
+}
+.steps > .step:before {
+    content: attr(data-step);
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #e6e6e6;
+    color: #e6e6e6;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 1.9rem;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.steps > .step:after {
+    content: '';
+    
+    position: absolute;
+    display: block;
+    background: #e6e6e6;
+    width: 100%;
+    height: 0.300rem;
+    top: 1rem;
+    left: 50%;
+    right: 50%;
+}
+.steps > .step:last-child:after {
+    display: none;
+}
+.steps > .step.is-complete {
+    color: #6d6875;
+}
+.steps > .step.is-complete:before {
+                
+    /* content: '\f48b'; */
+    content: '\2713';
+
+    color: #fff;
+    background: #1ac45e;
+    
+    border: 2px solid #1ac45e;
+}
+.steps > .step.is-complete:after {
+    background: #1ac45e;
+}
+
+.steps > .step.is-active:before {
+    color: #fff;
+    border: 2px solid #1ac45e;
+    background: #1ac45e;
+    content: '\2713';
+    /* content: '\f359'; 
+    font-family: "Font Awesome 5 Free"; 
+    font-style: normal;
+    font-weight: normal; */
+
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+/* #DELIVERED{
+    display: none;
+}
+#NOT_DELIVERED{
+    display: none;
+} */
+
+.steps2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    color: #929292;
+    height: 4rem;
+    
+
+}
+.steps2 > .step {
+    position: relative;
+    display: table-cell;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6d6875;
+
+    
+
+}
+.steps2 > .step:before {
+    content: attr(data-step);
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #e6e6e6;
+    color: #e6e6e6;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 1.9rem;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 1rem;
+
+    font-family: "Font Awesome 5 Free"; 
+    content: '\f47f';
+
+
+    font-weight: 900;
+}
+.steps2 > .step:after {
+    content: '';
+    
+    position: absolute;
+    display: block;
+    background: #e6e6e6;
+    width: 100%;
+    height: 0.300rem;
+    top: 1rem;
+    left: 50%;
+    right: 50%;
+}
+.steps2 > .step:last-child:after {
+    display: none;
+}
+.steps2 > .step.is-complete {
+    color: #6d6875;
+}
+.steps2 > .step.is-complete:before {
+                
+    /* content: '\f48b'; */
+    content: '\2713';
+
+    color: #fff;
+    background: #ff0000;
+    
+    border: 2px solid #ff0000;
+}
+.steps2 > .step.is-complete:after {
+    background: #ff0000;
+}
+
+.steps2 > .step.is-active:before {
+    color: #fff;
+    border: 2px solid #ff0000;
+    background: #ff0000;
+    
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f48b"; 
+
+    font-weight: 900;
+
+ 
+
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+.trackingCard-CSS{
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.trackingCardHeader-CSS{
+    background-color: #fff;
+}
+
+#shippingDetailsCards{
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#shippingDetailsCardsText-CSS{
+    text-align: right;
+    font-size: 20px;
+    font-weight: 700;
+    color: #101010;
+    margin-bottom: 2%;
+}
+
+.table{
+    text-align: right;
+    border: 1px solid #f1f1f1;
+    table-layout: fixed;
+}
+#tHead-CSS{
+    background-color: #fafafa;
+}
+.th-content{
+    color: #555;
+    font-weight: 700;
+    padding: 9px 24px;
+    font-size: 12px;
+    text-align: right !important;
+
+}
+
+#card1-CSS{
+    text-align: right;
+}
+
+#orderSummary{
+    font-size: 12px;
+    color: #a0aec0;
+    text-align: right !important;
+}
+
+#table-content{
+    font-size: 14px;
+    word-break: break-word;
+}
+
+
+.goog-te-banner-frame {
+    display:none !important
+    }
+
+    .skiptranslate {
+        display:none !important
+        }
+
+
+
+
+
+#cardImage{
+    display: inline;
+    height: 90%;
+    width: 90%;
+}
+
+#texts{
+    margin: 20% 0 0 0;
+}
+#firstText{
+    /* padding: 1rem; */
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#reportBtn{
+    width: 90%;
+    height: 2.5rem;
+    border-radius: 12px;
+    background-color: #FF0000;
+    color: #fff;
+    border: none;
+    margin-top: 7%;
+
+}
+
+
+#trackingCard{
+    margin: 0 auto; 
+    float: none; 
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#trackingCardText{
+    text-align: right;
+    padding: 5% 0 5% 0;
+}
+
+#trackingBtn{
+    background-color: #ff0000;
+    border: none;
+}
+
+
+
+
+
+
+#footer{
+    padding: 20px;
+    background-color: #141414;
+    color: #fff;
+    margin-top: 10%;
+}
+
+
+#footerNavigation{
+    padding-left: 50px;
+    padding-right: 5px;
+}
+#footerNavigation a{ 
+    color: #fff;
+    text-decoration: none;  
+}
+
+#footerNavigation a:hover{ 
+    background-color: none;
+    color: #ff0000;
+}
+
+#headerColor{
+    color: #ff0000
+}
+
+
+
+
+
